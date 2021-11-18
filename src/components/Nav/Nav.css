@@ -1,0 +1,42 @@
+.nav {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+.nav .nav__navigation {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1rem 3rem;
+}
+
+.nav .nav__logo a {
+  color: #000;
+  list-style: none;
+  text-decoration: none;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.nav .nav__spacer {
+  flex: 1;
+}
+
+.nav__navigation-items ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav__navigation-items ul li {
+  padding: 0 1rem;
+}
+
+.nav__navigation-items ul a {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.9rem;
+}
