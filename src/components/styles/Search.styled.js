@@ -2,14 +2,16 @@ import styled from "styled-components";
 
 export const StyledSearch = styled.input`
   position: relative;
-  z-index: 1;
-  display: block;
-  width: 16rem;
+  width: 15.6rem;
   border: none;
-  padding: 0.2rem 0;
+  padding: 0.35rem 0;
   border-bottom: 1px solid black;
-  margin: 1rem 0 0 10vw;
+  margin: 1rem 0 0 7.35vw;
   outline: none;
+
+  &::placeholder {
+    color: #000;
+  }
 
   // &:after {
   //   position: absolute;
