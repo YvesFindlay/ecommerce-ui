@@ -10,7 +10,7 @@ const App = () => {
   return (
     <React.Fragment>
       <Nav />
-      <Container>
+      <Container paddingT="4rem" paddingLR="3rem" paddingB="4rem">
         <Search />
         <Product />
       </Container>
