@@ -12,11 +12,14 @@ const Product = () => {
   //   }, []);
 
   return (
-    <StyledProduct>
-      <Container>
-        <StyledImg />
-      </Container>
-    </StyledProduct>
+    <>
+      <StyledProduct>
+        <Container paddingT="1rem" paddingB="0">
+          <StyledImg marginT="1rem" />
+          <StyledImg marginT="2rem" />
+        </Container>
+      </StyledProduct>
+    </>
   );
 };
 
