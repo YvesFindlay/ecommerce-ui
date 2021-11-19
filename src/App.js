@@ -1,20 +1,17 @@
 import React from "react";
-
-import Nav from "./components/Nav/Nav";
-import Search from "./components/Search/Search";
-import Product from "./components/Product/Product";
-
-import { Container } from "./components/styles/Container";
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import ProductList from './components/pages/product-page'
+const SplashPage = <div>hello world</div>;
 const App = () => {
   return (
-    <React.Fragment>
-      <Nav />
-      <Container paddingT="4rem" paddingLR="3rem" paddingB="4rem">
-        <Search />
-        <Product />
-      </Container>
-    </React.Fragment>
+    <div>
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<SplashPage/>}/>
+          <Route exact path="/product" element={<ProductList/>}/>
+        </Routes>
+      </Router>
+    </div>
   );
 };
 
