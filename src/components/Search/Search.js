@@ -6,7 +6,7 @@ const Search = () => {
   const inputSearchRef = useRef(null);
 
   useEffect(() => {
-    inputSearchRef.current.placeholder = "Search".toUpperCase();
+    inputSearchRef.current.placeholder = "Search";
   }, []);
 
   return <StyledSearch ref={inputSearchRef} />;

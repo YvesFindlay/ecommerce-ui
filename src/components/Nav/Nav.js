@@ -1,38 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
 
+import { StyledHeader } from "../styles/Nav.styled";
 import { StyledNav } from "../styles/Nav.styled";
+import { StyledNavLogo } from "../styles/Nav.styled";
+import { Spacer } from "../styles/Nav.styled";
+import { StyledNavItems } from "../styles/Nav.styled";
+import { Button } from "../styles/Button.styled";
+import useWindowSize from "../../Hooks/useWindowSize";
 
-// {useState, useEffect
-
-import "./Nav.css";
-
-const Nav = (props) => {
-  let navClasses = "nav";
+const Nav = () => {
+  const { width: windowWidth } = useWindowSize();
 
   return (
-    <header className={navClasses}>
-      <nav className="nav__navigation">
-        <div className="nav__logo">
+    <StyledHeader>
+      <StyledNav>
+        <StyledNavLogo>
           {" "}
           <a href="/">ClothesCo</a>{" "}
-        </div>
-        <div className="nav__spacer" />
-        {/* <div className="nav__hamburger"></div> */}
-        <div className="nav__navigation-items">
-          <ul>
-            <li>
-              <a href="/">Home</a>
-            </li>
-            <li>
-              <a href="/">About</a>
-            </li>
-            <li>
-              <a href="/">Contact</a>
-            </li>
-          </ul>
-        </div>
-        <div className="nav__spacer" />
-        <div className="nav__navigation-items">
+        </StyledNavLogo>
+        <Spacer />
+        {windowWidth >= 680 && (
+          <StyledNavItems>
+            <ul>
+              <li>
+                <a href="/">Women</a>
+              </li>
+              <li>
+                <a href="/">Men</a>
+              </li>
+              <li>
+                <a href="/">Boys</a>
+              </li>
+              <li>
+                <a href="/">Girls</a>
+              </li>
+            </ul>
+          </StyledNavItems>
+        )}
+        <Spacer />
+        <StyledNavItems>
           <ul>
             <li>
               <a href="/">Log In</a>
@@ -41,9 +47,10 @@ const Nav = (props) => {
               <a href="/">Cart(0)</a>
             </li>
           </ul>
-        </div>
-      </nav>
-    </header>
+        </StyledNavItems>
+        {/* <Button>Cart</Button> */}
+      </StyledNav>
+    </StyledHeader>
   );
 };
 
