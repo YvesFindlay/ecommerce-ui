@@ -5,7 +5,7 @@ const HomePage = () => {
   let navigate = useNavigate();
 
   function navigateToProductList() {
-    navigate('/products')
+    navigate('/apilist')
   }
   
   return (

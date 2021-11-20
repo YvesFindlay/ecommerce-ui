@@ -1,10 +1,10 @@
 import React from "react";
 
-import Nav from "../../../components/Nav/Nav";
-import Search from "../../../components/Search/Search";
-import Product from "../../../components/Product/Product";
+import Nav from "../../Nav/Nav";
+import Search from "../../Search/Search";
+import Product from "../../Product/Product";
 
-import { Container } from "../../../components/styles/Container";
+import { Container } from "../../styles/Container";
 
 const ProductPage = () => {
   return (
