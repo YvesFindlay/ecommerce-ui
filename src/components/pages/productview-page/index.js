@@ -1,11 +1,11 @@
 import React from "react";
 
 import styled from "styled-components";
-import { Container } from "../styles/Container";
-import { StyledButton } from "../styles/Button.styled";
+import { Container } from "../../styles/Container";
+import { StyledButton } from "../../styles/Button.styled";
 
-import Carousel from "../Carousel/Carousel";
-import { CarouselData } from "../Carousel/CarouselData";
+import Carousel from "../../Carousel/Carousel";
+import { CarouselData } from "../../Carousel/CarouselData";
 
 export const ProductViewContainer = styled.div`
   display: flex;
@@ -79,7 +79,7 @@ export const ProductDescriptionContainer = styled.div`
 const ProductView = () => {
   return (
     <ProductViewContainer>
-      <Container paddingT="0" paddingLR="1rem" paddingB="0">
+      <Container top="6rem" paddingT="0" paddingLR="1rem" paddingB="0">
         <ProductViewWrap>
           <Carousel slides={CarouselData} />
           <ProductDescriptionContainer>
@@ -91,7 +91,15 @@ const ProductView = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
                 possimus dicta aperiam quos cupiditate cum? Cum pariatur.
               </p>
-              <StyledButton>Add to cart</StyledButton>
+              <StyledButton
+                bg="#cc9d6a"
+                paddingTB="1rem"
+                paddingLR="2.5rem"
+                hoverBG="#fff"
+                hoverColor="#cc9d6a"
+              >
+                Add to cart
+              </StyledButton>
             </ProductTextContainer>
           </ProductDescriptionContainer>
         </ProductViewWrap>

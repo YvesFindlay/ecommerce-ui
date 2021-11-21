@@ -18,8 +18,6 @@ export const StyledCarousel = styled.div`
   background-size: cover;
 `;
 
-// const StyledCarouselImage = styled.div``;
-
 const Carousel = ({ slides }) => {
   const [current, setCurrent] = useState(0);
   const length = slides.length;

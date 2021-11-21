@@ -5,7 +5,6 @@ import { StyledNav } from "../styles/Nav.styled";
 import { StyledNavLogo } from "../styles/Nav.styled";
 import { Spacer } from "../styles/Nav.styled";
 import { StyledNavItems } from "../styles/Nav.styled";
-import { Button } from "../styles/Button.styled";
 import useWindowSize from "../../Hooks/useWindowSize";
 
 const Nav = () => {
@@ -48,7 +47,6 @@ const Nav = () => {
             </li>
           </ul>
         </StyledNavItems>
-        {/* <Button>Cart</Button> */}
       </StyledNav>
     </StyledHeader>
   );

@@ -6,6 +6,7 @@ export const StyledHeader = styled.header`
   top: 0;
   left: 0;
   width: 100%;
+  min-width: 280px;
   background-color: #fff;
 `;
 
@@ -22,7 +23,7 @@ export const StyledNav = styled.nav`
 
 export const StyledNavLogo = styled.div`
   a {
-    color: #000;
+    color: #cc9d6a;
     list-style: none;
     text-decoration: none;
     font-weight: 300;
@@ -54,7 +55,7 @@ export const StyledNavItems = styled.div`
 
   ul a {
     text-decoration: none;
-    color: #000;
+    color: #cc9d6a;
     font-size: 1.1rem;
     display: inline-block;
     position: relative;
@@ -69,7 +70,7 @@ export const StyledNavItems = styled.div`
       transform: scaleX(0);
       transition: transform 0.3s ease-out;
       transform-origin: right;
-      background-color: #000;
+      background-color: #cc9d6a;
     }
 
     &:hover::after {

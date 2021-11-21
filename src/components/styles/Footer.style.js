@@ -5,8 +5,8 @@ export const StyledFooter = styled.footer`
   z-index: 1;
   left: 0;
   bottom: 0;
-  background-color: #000;
-  padding: 2rem 3rem;
+  background-color: #cc9d6a;
+  padding: 2.5rem 3rem 1.5rem;
   display: flex;
   justify-content: space-evenly;
   color: white;
@@ -14,13 +14,14 @@ export const StyledFooter = styled.footer`
 
   @media (max-width: 510px) {
     flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
   }
 
   ul {
     display: flex;
-
     @media (max-width: 435px) {
-      margin-top: 1.5rem;
+      margin: 0.5rem 1rem;
     }
   }
 

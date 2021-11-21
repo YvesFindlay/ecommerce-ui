@@ -14,7 +14,7 @@ const YoutubeSVG = () => (
     />
     <path
       d="M301.579 379.557L499.428 267.008L301.579 154.447V379.557Z"
-      fill="black"
+      fill="#cc9d6a"
     />
   </svg>
 );
