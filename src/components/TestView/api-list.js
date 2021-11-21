@@ -168,19 +168,32 @@ const ApiList = () => {
     //   }
     // });
     // setProducts(productList.data);
-    setProducts(sample);
-    console.log('sample: '+JSON.stringify(data))
+    let response = await fetch('https://static-r2.ristack-3.nn4maws.net/v1/plp/en_gb/2506/products.json', { 
+      headers: {
+      'Content-Type': 'application/json',
+      mode: 'no-cors',
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Headers': 'X-Requested-With'
+    },})
+
+    const data = await response.json();
+console.log('@@@@ data.Products: '+JSON.stringify(data.Products))
+
+    setProducts(data.Products);
+
+    // setProducts(sample);
+    // console.log('sample: '+JSON.stringify(data))
    };
  
-  useEffect(() => {
-    getProducts()
+  useEffect(async() => {
+    await getProducts()
   }, [])
 
   return (
     <div>
         <h1>ApiList</h1>
         {/* <div><p>{data}</p></div> */}
-        <p>{data.Products.map(product => <div>{product.name}</div>)}</p>
+        {/* <p>{data.Products.map(product => <div>{product.name}</div>)}</p> */}
     </div>
   );
 };
